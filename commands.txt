@@ -1,0 +1,26 @@
+// add new migration
+dotnet ef migrations add MigrationName
+
+// update db
+dotnet ef database update
+
+// run angular project and recompile on changed
+ng serve
+
+// run .net api and update on changed
+dotnet watch run
+
+
+
+to look up
+
+CreatedAtRoute()
+
+****************
+DATA ANNOTATIONS
+[Route("uri/here")] specifies route that reaches that method. for controller
+[ApiController]
+[HttpPost("uri")] specifies endpoint that calls method. for controller
+[FromBody] specifies that data comes from body of HTTP request
+[Authorize] need access token to use. gotta set up that service in startup
+[AllowAnonymous] don't need access token
